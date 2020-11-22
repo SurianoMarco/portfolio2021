@@ -367,11 +367,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.jpg") top center no-repeat;
+  height: 120vh;
+  background-color: #000;
   background-size: cover;
   position: relative;
   padding-top: 82px;
+}
+
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  max-width: 100vw;
+  max-height: 60vh;
 }
 
 #hero:before {
