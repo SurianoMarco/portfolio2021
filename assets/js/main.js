@@ -1,9 +1,3 @@
-/**
-* Template Name: Presento - v2.0.2
-* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -141,7 +135,7 @@
     }
   });
 
-  $('.back-to-top, .back-top, .active').click(function() {
+  $('.back-to-top, .back-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
