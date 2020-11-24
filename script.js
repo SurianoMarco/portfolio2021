@@ -30,8 +30,8 @@ window.addEventListener("scroll", (event) => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=3840;
-canvas.height=2160;
+canvas.width=1920;
+canvas.height=1080;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
