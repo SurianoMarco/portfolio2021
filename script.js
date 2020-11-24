@@ -4,8 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 160;
 const currentFrame = index => (
-  `assets/img/parallax/${index.toString().padStart(4, '0')}.png`
-  
+  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4, '0')}.png?alt=media&token=056db127-ce24-43d3-99b1-ea3d9f8cd0f5`
 )
 
 const preloadImages = () => {
