@@ -2,9 +2,9 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 160;
+const frameCount = 114;
 const currentFrame = index => (
-  `assets/img/parallax/${index.toString().padStart(4, '0')}.png`
+  `assets/img/parallax/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
@@ -29,8 +29,8 @@ window.addEventListener("scroll", (event) => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=1920;
-canvas.height=1080;
+canvas.width=1158;
+canvas.height=381;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
