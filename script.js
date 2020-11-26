@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 114;
 const currentFrame = index => (
-  `assets/img/parallax/${index.toString().padStart(4, '0')}.jpg`
+  `assets/img/parallax/${index.toString().padStart(4, '0')}.webp`
 )
 
 const preloadImages = () => {
