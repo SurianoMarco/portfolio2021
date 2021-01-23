@@ -2,17 +2,17 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 114;
+const frameCount = 147;
 const currentFrame = index => (
-  `assets/img/parallax/${index.toString().padStart(4, '0')}.webp`
+  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4, '0')}.webp?alt=media&token=3372c0be-e72b-4b71-8130-629f5dce3795`
 )
 
-const preloadImages = () => {
+var images = [] // since everything else is 1-indexed, explicitly fill images[0]
+function preloadImages() {
   for (let i = 1; i < frameCount; i++) {
-    const img = new Image();
-    img.src = currentFrame(i);
-    }
-  
+    images[i] = new Image();
+    images[i].src = currentFrame(i);
+  }
 };
 
 window.addEventListener("scroll", (event) => {
@@ -36,8 +36,7 @@ img.onload=function(){
 }
 
 const updateImage = index => {
-  img.src = currentFrame(index);
-  context.drawImage(img, 0, 0);
+  context.drawImage(images[index], 0, 0); 
 }
 
 window.addEventListener('scroll', () => {  
