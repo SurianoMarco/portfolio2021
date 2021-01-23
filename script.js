@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 161;
 const currentFrame = index => (
-  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4, '0')}.webp?alt=media&token=3372c0be-e72b-4b71-8130-629f5dce3795`
+  `https://firebasestorage.googleapis.com/v0/b/marco-suriano.appspot.com/o/${index.toString().padStart(4,'0')}.webp?alt=media&token=3372c0be-e72b-4b71-8130-629f5dce3795`
 )
 
 var images = [] // since everything else is 1-indexed, explicitly fill images[0]
@@ -50,8 +50,6 @@ window.addEventListener('scroll', () => {
   
   requestAnimationFrame(() => updateImage(frameIndex + 1))
 });
-
-
 
 
 preloadImages()
