@@ -917,8 +917,6 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(17, 17, 17, 0.6);
-  border-radius: 35px;
   position: absolute;
   left: 0;
   right: 0;
@@ -951,7 +949,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0);
   font-weight: 600;
 }
 
